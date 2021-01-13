@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    {% if name == "" %}
+    <form method="post">
+        <input type="text" name="user">
+        <input type="submit" name="send" value="送出">
+    </form>
+    {%else%}
+    <p>Hello,{{name}}</p>
+    {% endif %}
+</body>
+</html>
